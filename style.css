@@ -438,7 +438,7 @@ p {
     width: 100%;
     left: 0;
     height: 2px;
-    background-color: #fff;
+    background-color: #424242;
     content: '';
     bottom: 0;
     z-index: 2;
@@ -546,6 +546,14 @@ p {
 :: 4.0 Special Area CSS
 -------------------------- */
 
+.special-area {
+    background-color: #424242
+}
+
+.special_description_area {
+    background-color: #333333
+}
+
 .single-icon > i {
     font-size: 36px;
     color: #ffb300;
@@ -567,13 +575,14 @@ p {
 }
 
 .single-special {
-    border: 1px solid #424242;
+    border: 1px solid #333333;
     padding: 40px;
     border-radius: 40px 40px 40px 0px;
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
     transition-duration: 800ms;
     margin-bottom: 30px;
+    background-color: #333333
 }
 
 .special_description_content > h2 {
@@ -604,7 +613,8 @@ p {
 }
 
 .app-download-btn a {
-    border: 1px solid #ddd;
+    border: 1px solid #424242;
+    background-color: #424242;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -662,6 +672,10 @@ p {
 /* --------------------------
 :: 5.0 Features Area CSS
 -------------------------- */
+
+.awesome-feature-area {
+    background-color: #424242
+}
 
 .single-feature {
     margin-bottom: 50px;
@@ -1080,6 +1094,10 @@ p {
 /* --------------------------
 :: 12.0 Team Area CSS Start
 -------------------------- */
+
+.our-Team-area {
+    background-color: #333333
+}
 
 .member-image {
     margin-bottom: 30px;
