@@ -1,0 +1,52 @@
+20181206102426
+/usr/local/cpanel/3rdparty/lib/path-bin/git
+/usr/local/cpanel/3rdparty/lib/path-bin/git
+$ /usr/local/cpanel/3rdparty/lib/path-bin/git clone "gitlab.com:diabeteam/showcase-website.git" "/home/sc1julianjl/www/showcase-website/releases/20181206102620" --branch="master" --depth="1"
+/usr/local/cpanel/3rdparty/lib/path-bin/git clone "gitlab.com:diabeteam/showcase-website.git" "/home/sc1julianjl/www/showcase-website/releases/20181206102620" --branch="master" --depth="1"
+Cloning into '/home/sc1julianjl/www/showcase-website/releases/20181206102620'...
+/usr/local/cpanel/3rdparty/lib/path-bin/git
+/usr/local/cpanel/3rdparty/lib/path-bin/git
+$ cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+$ /usr/local/cpanel/3rdparty/lib/path-bin/git submodule update --init --recursive
+cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+/usr/local/cpanel/3rdparty/lib/path-bin/git submodule update --init --recursive
+
+which: no bundle in (/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/bin:/usr/bin:/opt/cpanel/composer/bin)
+/opt/cpanel/composer/bin/composer
+which: no npm in (/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/bin:/usr/bin:/opt/cpanel/composer/bin)
+which: no bower in (/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/cpanel/3rdparty/lib/path-bin:/usr/local/bin:/usr/bin:/opt/cpanel/composer/bin)
+which: no bower in (/home/sc1julianjl/www/showcase-website/releases/20181206102620/node_modules/.bin)
+$ cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+$ chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+$ chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+$ chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite
+chmod: cannot access '/home/sc1julianjl/www/showcase-website/releases/20181206102620/app/database/production.sqlite': No such file or directory
+$ cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+$ chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+$ chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+$ chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/storage
+chmod: cannot access '/home/sc1julianjl/www/showcase-website/releases/20181206102620/storage': No such file or directory
+$ cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+$ chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+$ chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+$ chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+cd /home/sc1julianjl/www/showcase-website/releases/20181206102620
+chmod -R 755 /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+chmod -R g+s /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+chown -R www-data:www-data /home/sc1julianjl/www/showcase-website/releases/20181206102620/public
+chmod: cannot access '/home/sc1julianjl/www/showcase-website/releases/20181206102620/public': No such file or directory
+$ ln -s /home/sc1julianjl/www/showcase-website/releases/20181206102620 /home/sc1julianjl/www/showcase-website/current-temp
+$ mv -Tf /home/sc1julianjl/www/showcase-website/current-temp /home/sc1julianjl/www/showcase-website/current
+ln -s /home/sc1julianjl/www/showcase-website/releases/20181206102620 /home/sc1julianjl/www/showcase-website/current-temp
+mv -Tf /home/sc1julianjl/www/showcase-website/current-temp /home/sc1julianjl/www/showcase-website/current
+
+|=> Successfully deployed release 20181206102620
+|=> No releases to prune from the server
