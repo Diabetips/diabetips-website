@@ -438,6 +438,7 @@ p {
     z-index: 1;
     background-position: bottom center;
     background-size: cover;
+    background-color: #424242;
 }
 
 .wellcome_area:after {
