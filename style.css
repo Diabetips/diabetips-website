@@ -1323,3 +1323,24 @@ p {
 .copyright-text > p {
     margin-bottom: 0;
 }
+
+
+.outer {
+    position: relative;
+    background-size: cover;
+}
+
+.outer:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc(2 / 3 * 100%);
+}
+
+.outer > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
