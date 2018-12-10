@@ -44,6 +44,10 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Cabin', sans-serif;
     background-color: #333333 !important;
@@ -405,6 +409,11 @@ p {
 }
 
 /* stcicky css */
+@media (min-width:992px){
+    .nav-height {
+        height: 60px;
+    }
+}
 
 .header_area.sticky {
     background-color: #00a1e0;
