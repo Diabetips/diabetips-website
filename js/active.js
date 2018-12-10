@@ -133,7 +133,7 @@
     $window.on('scroll', function () {
         if ($window.scrollTop() > 48) {
             $('.header_area').addClass('sticky slideInDown');
-        } else {
+        } else if ($window.scrollTop() === 0) {
             $('.header_area').removeClass('sticky slideInDown');
         }
     });
