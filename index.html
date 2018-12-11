@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
@@ -31,47 +32,66 @@
         <div class="colorlib-load"></div>
     </div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header_area animated">
-        <div class="container-fluid">
-            <div class="row align-items-center" style="height: 60px">
-                <!-- Menu Area Start -->
-                <div class="col-12 col-lg-10">
-                    <div class="menu_area">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <!-- Logo -->
-                            <a class="navbar-brand" href="#"><img src="img/core-img/logo_white.png" alt="" style="height: 50px"></a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar" aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                            <!-- Menu Area -->
-                            <div class="collapse navbar-collapse" id="ca-navbar">
-                                <ul class="navbar-nav ml-auto" id="nav">
-                                    <li class="nav-item active"><a class="nav-link" href="#home">Acceuil</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#team">Équipe</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                                </ul>
+<!-- ***** Header Area Start ***** -->
+<header class="header_area animated fast-animated">
+    <div class="container-fluid">
+        <div class="row align-items-center nav-height">
+            <!-- Menu Area Start -->
+            <div class="col-12 col-lg-10">
+                <div class="menu_area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="#"><img src="img/core-img/logo_white.png" alt=""
+                                                              style="height: 50px"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
+                                aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <!-- Menu Area -->
+                        <div class="collapse navbar-collapse" id="ca-navbar">
+                            <ul class="navbar-nav ml-auto" id="nav">
+                                <li class="nav-item active"><a class="nav-link" href="#home">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">A propos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#screenshot">Screenshot</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#pricing">Prix</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#team">Équipe</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+                            <div class="sing-up-button d-lg-none">
+                                <a href="#">Je suis diabétologue</a>
                             </div>
-                        </nav>
-                    </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Signup btn -->
+            <div class="col-12 col-lg-2">
+                <div class="sing-up-button d-none d-lg-block">
+                    <a href="#">Je suis diabétologue</a>
                 </div>
             </div>
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Wellcome Area Start ***** -->
-    <section class="wellcome_area clearfix" id="home">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 col-md">
-                    <div class="wellcome-heading">
-                        <h2>Diabetips</h2>
-                        <h3>D</h3>
-                        <p>WELCOME HUMAN</p>
-                    </div>
-                    <div class="get-start-area">
-                    </div>
+<!-- ***** Wellcome Area Start ***** -->
+<section class="wellcome_area clearfix" id="home">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md">
+                <div class="wellcome-heading">
+                    <h2>Diabetips</h2>
+                    <h3>D</h3>
+                    <p>Ne souffrez plus de votre diabète</p>
+                </div>
+                <div class="get-start-area">
+                    <!-- Form Start -->
+                    <form action="#" method="post" class="form-inline">
+                        <input type="email" class="form-control email" placeholder="nom@email.com">
+                        <button type="submit" class="submit" style="padding-left: 10px; padding-right: 10px;">
+                            Inscription à notre newsletter
+                        </button>
+                    </form>
+                    <!-- Form End -->
                 </div>
             </div>
         </div>
@@ -81,17 +101,15 @@
         </div>
     </section>
     <!-- ***** Wellcome Area End ***** -->
-
-    <!-- ***** Special Area Start ***** -->
-    <section class="special-area section_padding_50" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Section Heading Area -->
-                    <div class="section-heading text-center">
-                        <h2>Pourquoi nous choisir ?</h2>
-                        <div class="line-shape"></div>
-                    </div>
+<!-- ***** Special Area Start ***** -->
+<section class="special-area bg-white section_padding_100" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area -->
+                <div class="section-heading text-center">
+                    <h2>Pourquoi nous choisir ?</h2>
+                    <div class="line-shape"></div>
                 </div>
             </div>
 
@@ -128,34 +146,34 @@
                 </div>
             </div>
         </div>
-        <!-- Special Description Area -->
-        <div class="special_description_area" style="padding-top: 50px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="animatable special_description_img bounceInLeft">
-                            <img src="img/bg-img/special.png" alt="">
-                        </div>
+    </div>
+    <!-- Special Description Area -->
+    <div class="special_description_area mt-150">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="special_description_img">
+                        <img src="img/bg-img/special.png" alt="">
                     </div>
-                    <div class="col-lg-6 col-xl-5 ml-xl-auto">
-                        <div class="special_description_content">
-                            <h2>Téléchargez l'App Aujourd'hui !</h2>
-                            <p>Et vous aussi, simplifiez votre diabète</p>
-                            <div class="app-download-area">
-                                <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
-                                    <!-- Google Store Btn -->
-                                    <a href="#">
-                                        <i class="fa fa-android"></i>
-                                        <p class="mb-0"><span>Téléchargez sur</span> Google Store</p>
-                                    </a>
-                                </div>
-                                <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
-                                    <!-- Apple Store Btn -->
-                                    <a href="#">
-                                        <i class="fa fa-apple"></i>
-                                        <p class="mb-0"><span>Téléchargez sur</span> Apple Store</p>
-                                    </a>
-                                </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 ml-xl-auto">
+                    <div class="special_description_content">
+                        <h2>Téléchargez l'App Aujourd'hui !</h2>
+                        <p>Et vous aussi, simplifiez votre diabète</p>
+                        <div class="app-download-area">
+                            <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
+                                <!-- Google Store Btn -->
+                                <a href="#">
+                                    <i class="fa fa-android"></i>
+                                    <p class="mb-0"><span>Disponible sur le</span> Play Store</p>
+                                </a>
+                            </div>
+                            <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
+                                <!-- Apple Store Btn -->
+                                <a href="#">
+                                    <i class="fa fa-apple"></i>
+                                    <p class="mb-0"><span>Disponible sur l'</span> Apple Store</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -164,17 +182,15 @@
         </div>
     </section>
     <!-- ***** Special Area End ***** -->
-
-    <!-- ***** Awesome Features Start ***** -->
-    <section class="awesome-feature-area section_padding_0_50 clearfix" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- Heading Text -->
-                    <div class="section-heading text-center">
-                        <h2>Fonctionnalités</h2>
-                        <div class="line-shape"></div>
-                    </div>
+<!-- ***** Awesome Features Start ***** -->
+<section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Heading Text -->
+                <div class="section-heading text-center">
+                    <h2>Fonctionnalités</h2>
+                    <div class="line-shape"></div>
                 </div>
             </div>
 
@@ -232,192 +248,358 @@
         </div>
     </section>
     <!-- ***** Awesome Features End ***** -->
-
-    <!-- ***** App Screenshots Area Start *****
-    <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    Heading Text
-                    <div class="section-heading">
-                        <h2>App Screenshots</h2>
-                        <div class="line-shape"></div>
+<!-- ***** Video Area Start ***** -->
+<div class="video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Video Area Start -->
+                <div class="video-area" style="background-image: url(img/bg-img/video.jpg);">
+                    <div class="video-play-btn">
+                        <a href="https://www.youtube.com/watch?v=f5BBJ4ySgpo" class="video_btn"><i class="fa fa-play"
+                                                                                                   aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    App Screenshots Slides
-                    <div class="app_screenshots_slides owl-carousel">
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-1.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-2.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-3.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-4.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-5.jpg" alt="">
-                        </div>
-                        <div class="single-shot">
-                            <img src="img/scr-img/app-3.jpg" alt="">
-                        </div>
+    </div>
+</div>
+<!-- ***** Video Area End ***** -->
+
+<!-- ***** Cool Facts Area Start ***** -->
+<section class="cool_facts_area clearfix">
+
+</section>
+<!-- ***** Cool Facts Area End ***** -->
+
+<!-- ***** App Screenshots Area Start ***** -->
+<section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <!-- Heading Text  -->
+                <div class="section-heading">
+                    <h2>App Screenshots</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <!-- App Screenshots Slides  -->
+                <div class="app_screenshots_slides owl-carousel">
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-1.jpg" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-2.jpg" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-3.jpg" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-4.jpg" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-5.jpg" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <img src="img/scr-img/app-3.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    ***** App Screenshots Area End *****====== -->
+    </div>
+</section>
+<!-- ***** App Screenshots Area End *****====== -->
 
-    <!-- ***** Our Team Area Start ***** -->
-    <section class="our-Team-area section_padding_50 clearfix" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2>Notre équipe</h2>
-                        <div class="line-shape"></div>
+<!-- ***** Pricing Plane Area Start *****==== -->
+<section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Heading Text  -->
+                <div class="section-heading">
+                    <h2>Nos formules</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters" style="justify-content: center">
+            <div class="col-12 col-md-4 col-lg-3">
+                <!-- Package Price  -->
+                <div class="single-price-plan active text-center">
+                    <!-- Package Text  -->
+                    <div class="package-plan">
+                        <h5>Beta testeur</h5>
+                        <div class="ca-price justify-content-center">
+                            <div class="d-flex justify-content-center">
+                                <span>€</span>
+                                <h4>0</h4>
+                            </div>
+                            <div class="col-12">
+                                <p>Application gratuite à vie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-description">
+                        <p>Up to 10 users monthly</p>
+                        <p>Unlimited updates</p>
+                        <p>Free host &amp; domain</p>
+                        <p>24/7 Support</p>
+                        <p>10 Unique Users</p>
+                    </div>
+                    <!-- Plan Button  -->
+                    <div class="plan-button">
+                        <a href="#contact">Devenir beta testeur</a>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/bigare.jpg')">
-                        </div>
-                        <div class="member-text">
-                            <h4>Mathieu Bigaré</h4>
-                            <p>Project Lead</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/suc.png')">
-                        </div>
-                        <div class="member-text">
-                            <h4>Yannick Suc</h4>
-                            <p>Lead IA</p>
+            <div class="col-12 col-md-4 col-lg-3">
+                <!-- Package Price  -->
+                <div class="single-price-plan text-center">
+                    <!-- Package Text  -->
+                    <div class="package-plan">
+                        <h5>Basic</h5>
+                        <div class="ca-price justify-content-center">
+                            <div class="d-flex justify-content-center">
+                                <span>€</span>
+                                <h4>0</h4>
+                            </div>
+                            <div class="col-12">
+                                <p>p</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/de-baumont.jpg')">
-                        </div>
-                        <div class="member-text">
-                            <h4>Alexandre Debeaumont</h4>
-                            <p>Dev IA & Back</p>
-                        </div>
+                    <div class="package-description">
+                        <p>Acc</p>
                     </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                    <div class="member-image outer" style="background-image: url('img/team-img/eple.jpg')">
-                    </div>
-                        <div class="member-text">
-                            <h4>Gregory Eple</h4>
-                            <p>Dev Front</p>
-                        </div>
+                    <div class="plan-button">
+                        <a href="#">Pas disponible pour le moment</a>
                     </div>
                 </div>
             </div>
-            <div class="row" style="justify-content: center">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/stalin.jpg')">
-                        </div>
-                        <div class="member-text">
-                            <h4>Antonin Sordel</h4>
-                            <p>Dev IA</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/stalin.jpg')">
-                        </div>
-                        <div class="member-text">
-                            <h4>Arthur Melin</h4>
-                            <p>Dev Back</p>
+            <div class="col-12 col-md-4 col-lg-3">
+                <!-- Package Price  -->
+                <div class="single-price-plan text-center">
+                    <!-- Package Text  -->
+                    <div class="package-plan">
+                        <h5>Premium</h5>
+                        <div class="ca-price d-flex justify-content-center">
+                            <span>€</span>
+                            <h4>20</h4>
+                            <span style="padding-top: 19px;">/mois</span>
                         </div>
                     </div>
+                    <div class="package-description">
+                        <p>Acc</p>
+                    </div>
+                    <div class="plan-button">
+                        <a href="#">Pas disponible pour le moment</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="single-team-member animatable fadeInDown">
-                        <div class="member-image outer" style="background-image: url('img/team-img/ladjani.png')">
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-price-plan text-center">
+                    <div class="package-plan">
+                        <h5>Community Plan</h5>
+                        <div class="ca-price d-flex justify-content-center">
+                            <span>$</span>
+                            <h4>99</h4>
                         </div>
-                        <div class="member-text">
-                            <h4>Julian Ladjani</h4>
-                            <p>Lead Architecture</p>
-                        </div>
+                    </div>
+                    <div class="package-description">
+                        <p>Up to 10 users monthly</p>
+                        <p>Unlimited updates</p>
+                        <p>Free host &amp; domain</p>
+                        <p>24/7 Support</p>
+                        <p>10 Unique Users</p>
+                    </div>
+                    <div class="plan-button">
+                        <a href="#">Select Plan</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!-- ***** Pricing Plane Area End ***** -->
+
+<!-- ***** Client Feedback Area Start ***** -->
+
+<!-- ***** Client Feedback Area End ***** -->
+
+<!-- ***** CTA Area Start ***** -->
+<section class="our-monthly-membership section_padding_50 clearfix">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <div class="membership-description">
+                    <h2>Join our Monthly Membership</h2>
+                    <p>Find the perfect plan for you — 100% satisfaction guaranteed.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
+                    <a href="#contact">Devenir beta testeur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** CTA Area End ***** -->
+
+<!-- ***** Our Team Area Start ***** -->
+<section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <!-- Heading Text  -->
+                <div class="section-heading">
+                    <h2>Notre équipe</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="justify-content: center">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/ladjani.png" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Mathieu Bigaré</h4>
+                        <p>Responsable du projet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/ladjani.png" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Yannick Suc</h4>
+                        <p>Responsable IA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/team-1.jpg" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Arthur Melin</h4>
+                        <p>Responsable back-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/ladjani.png" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Julian Ladjani</h4>
+                        <p>Responsable architecture</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/team-1.jpg" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Alexandre de Beaumont</h4>
+                        <p>Developpeur IA & back-end</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/team-1.jpg" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Antonin Sordel</h4>
+                        <p>Developpeur IA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="single-team-member">
+                    <div class="member-image">
+                        <img src="img/team-img/team-1.jpg" alt="">
+                    </div>
+                    <div class="member-text">
+                        <h4>Gregory Eple</h4>
+                        <p>Developpeur front-end</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ***** Our Team Area End ***** -->
-
-    <!-- ***** Contact Us Area Start ***** -->
-    <section class="footer-contact-area section_padding_50 clearfix" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Heading Text  -->
-                    <div class="section-heading">
-                        <h2>Contactez nous !</h2>
-                        <div class="line-shape"></div>
-                    </div>
-                    <div class="footer-text">
-                        <p>Faites nous part de votre expérience et de vos idées</p>
-                    </div>
-                    <div class="address-text">
-                        <p><span>Addresse:</span> 80 rue Saint-Georges, 54000 Nancy</p>
-                    </div>
-                    <div class="phone-text">
-                        <p><span>Téléphone:</span> +33761585482</p>
-                    </div>
-                    <div class="email-text">
-                        <p><span>Email:</span> contact@diape.tips</p>
-                    </div>
+<!-- ***** Contact Us Area Start ***** -->
+<section class="footer-contact-area section_padding_100 clearfix" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Heading Text  -->
+                <div class="section-heading">
+                    <h2 style="text-align: left;">Contactez nous !</h2>
+                    <div class="line-shape"></div>
                 </div>
-                <div class="col-md-6">
-                    <!-- Form Start-->
-                    <div class="contact_from">
-                        <form action="#" method="post">
-                            <!-- Message Input Area Start -->
-                            <div class="contact_input_area">
-                                <div class="row">
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group animatable bounceInRight">
-                                            <input type="text" class="form-control" name="name" id="name" placeholder="Nom" required>
-                                        </div>
+                <div class="footer-text">
+                    <p>Faites nous part de votre expérience et de vos idées.
+                        Devenez un beta testeur de notre application</p>
+                </div>
+                <div class="address-text">
+                    <p><span>Addresse:</span> 80 rue Saint-Georges, 54000 Nancy</p>
+                </div>
+                <div class="phone-text">
+                    <p><span>Téléphone:</span> +33761585482</p>
+                </div>
+                <div class="email-text">
+                    <p><span>Email:</span> contact@diape.tips</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Form Start-->
+                <div class="contact_from">
+                    <form action="#" method="post">
+                        <!-- Message Input Area Start -->
+                        <div class="contact_input_area">
+                            <div class="row">
+                                <!-- Single Input Area Start -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Nom"
+                                               required>
                                     </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-md-12">
-                                        <div class="form-group animatable bounceInRight">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
-                                        </div>
+                                </div>
+                                <!-- Single Input Area Start -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                               placeholder="E-mail" required>
                                     </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12">
-                                        <div class="form-group animatable bounceInRight">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Votre Message *" required></textarea>
-                                        </div>
+                                </div>
+                                <!-- Single Input Area Start -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                                  placeholder="Votre Message *" required></textarea>
                                     </div>
-                                    <!-- Single Input Area Start -->
-                                    <div class="col-12  animatable bounceInRight">
-                                        <button type="submit" class="btn submit-btn">Envoyer</button>
-                                    </div>
+                                </div>
+                                <!-- Single Input Area Start -->
+                                <div class="col-12">
+                                    <button type="submit" class="btn submit-btn">Envoyer</button>
                                 </div>
                             </div>
                             <!-- Message Input Area End -->
@@ -453,22 +635,19 @@
     </footer>
     <!-- ***** Footer Area Start ***** -->
 
-    <!-- Jquery-2.2.4 JS -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap-4 Beta JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins JS -->
-    <script src="js/plugins.js"></script>
-    <!-- Slick Slider Js-->
-    <script src="js/slick.min.js"></script>
-    <!-- Footer Reveal JS -->
-    <script src="js/footer-reveal.min.js"></script>
-    <!-- Active JS -->
-    <script src="js/active.js"></script>
-    <!-- Animations -->
-    <script src="js/animations.js"></script>
+<!-- Jquery-2.2.4 JS -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap-4 Beta JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- All Plugins JS -->
+<script src="js/plugins.js"></script>
+<!-- Slick Slider Js-->
+<script src="js/slick.min.js"></script>
+<!-- Footer Reveal JS -->
+<script src="js/footer-reveal.min.js"></script>
+<!-- Active JS -->
+<script src="js/active.js"></script>
 </body>
-
 </html>
