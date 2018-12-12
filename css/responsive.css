@@ -20,7 +20,7 @@
     }
     .welcome-thumb {
         width: 50%;
-        bottom: -100px;
+        bottom: 300px;
         right: 50px;
     }
     .video-area {
@@ -62,8 +62,8 @@
     }
     .welcome-thumb {
         width: 50%;
-        bottom: -100px;
-        right: 0;
+        bottom: 150px;
+        right: 160px;
     }
     .wellcome-heading {
         margin-bottom: 70px;
@@ -160,7 +160,7 @@
     }
     .welcome-thumb {
         width: 90%;
-        bottom: -74px;
+        bottom: 200px;
         right: 0;
     }
     .logo_area > a > h2 {
@@ -245,7 +245,7 @@
         font-size: 70px;
     }
     .welcome-thumb {
-        bottom: -109px;
+        bottom: 100px;
         width: 75%;
     }
     .wellcome-heading {
