@@ -23,10 +23,41 @@
             nav: true,
             navText: ["<i class='pe-7s-angle-left'</i>", "<i class='pe-7s-angle-right'</i>"]
         });
-        $(".app_screenshots_slides").owlCarousel({
+    }
+
+    // :: 2.0 Slick Active Code
+    if ($.fn.slick) {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 500,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            lazyLoad: 'ondemand',
+            speed: 500,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true,
+            slide: 'div',
+            autoplay: true,
+            centerPadding: '30px',
+            mobileFirst: true,
+            prevArrow: '<i class="fa fa-angle-left"></i>',
+            nextArrow: '<i class="fa fa-angle-right"></i>'
+        });
+        /*$(".app_screenshots_slides").owlCarousel({
             items: 1,
             loop: true,
             autoplay: true,
+            video: true,
+            merge: true,
             smartSpeed: 800,
             margin: 30,
             center: true,
@@ -42,35 +73,82 @@
                     items: 5
                 }
             }
-        });
-    }
-
-    // :: 2.0 Slick Active Code
-    if ($.fn.slick) {
-        $('.slider-for').slick({
+        });*/
+        $('.app_screenshots_slides_titles').slick({
             slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 500,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            speed: 500,
-            asNavFor: '.slider-for',
-            dots: true,
             centerMode: true,
-            focusOnSelect: true,
-            slide: 'div',
-            autoplay: true,
-            centerMode: true,
-            centerPadding: '30px',
             mobileFirst: true,
-            prevArrow: '<i class="fa fa-angle-left"></i>',
-            nextArrow: '<i class="fa fa-angle-right"></i>'
+            infinite: true,
+            speed: 300,
+            focusOnSelect: false,
+            zIndex: 1001,
+            arrows: false,
+            touchMove: false,
+            draggable: false,
+            swipe: false,
+            asNavFor: '.app_screenshots_slides',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 5
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 0,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
+        $('.app_screenshots_slides')
+            .on('init', function (ev, el) {
+                $('video').each(function () {
+                    this.play();
+                });
+            })
+            .slick({
+                asNavFor: '.app_screenshots_slides_titles',
+                centerMode: true,
+                mobileFirst: true,
+                autoplay: true,
+                zIndex: 1000,
+                autoplaySpeed: 2000,
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                focusOnSelect: true,
+                arrows: false,
+                draggable: false,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 5
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 0,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
     }
 
     // :: 3.0 Footer Reveal Active Code

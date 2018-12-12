@@ -7,7 +7,6 @@
 :: Version: v1.0
 :: Created: 11/03/2017
 -------------------------- */
-
 /* --- [Master Stylesheet] ----
 :: 1.0 Base CSS Start
 :: 2.0 Header Area CSS
@@ -30,7 +29,9 @@
 @import 'css/animate.css';
 @import 'css/magnific-popup.css';
 @import 'css/owl.carousel.min.css';
+@import 'css/owl.theme.default.min.css';
 @import 'css/slick.css';
+@import 'css/slick-theme.css';
 @import 'css/font-awesome.min.css';
 @import 'css/themify-icons.css';
 @import 'css/ionicons.min.css';
@@ -42,10 +43,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    overflow-x: hidden;
 }
 
 body {
@@ -242,7 +239,6 @@ p {
     margin: 0;
 }
 
-
 .section-heading {
     text-align: center;
     margin-bottom: 60px;
@@ -347,12 +343,10 @@ p {
     display: flex;
 }
 
-
 .menu_area .navbar-brand:hover,
 .menu_area .navbar-brand:focus {
     color: #fff;
 }
-
 
 .menu_area {
     position: relative;
@@ -370,7 +364,6 @@ p {
     transition-duration: 500ms;
     padding: 35px 15px;
 }
-
 
 .menu_area nav ul li > a:hover {
     color: #01baef;
@@ -402,7 +395,7 @@ p {
 }
 
 /* stcicky css */
-@media (min-width:992px){
+@media (min-width: 992px) {
     .nav-height {
         height: 60px;
     }
@@ -411,7 +404,7 @@ p {
 .header_area.sticky {
     background-color: #0078ff;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 60px;
     position: fixed;
     top: 0;
@@ -425,10 +418,10 @@ p {
 .header_area.sticky .menu_area #nav .nav-link {
     padding: 0px 15px;
 }
+
 .header_area.sticky .navbar {
     padding: 0;
 }
-
 
 /* --------------------------
 :: 3.0 Wellcome Area CSS
@@ -596,7 +589,7 @@ p {
 
 .single-special:hover {
     -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
-            box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
 }
 
 .single-special p {
@@ -728,7 +721,6 @@ p {
     border-radius: 20px;
 }
 
-
 .video-area .video-play-btn a {
     width: 80px;
     height: 80px;
@@ -771,7 +763,6 @@ p {
     top: -100px;
 }
 
-
 .cool_facts_area:after {
     position: absolute;
     bottom: -100px;
@@ -811,6 +802,33 @@ p {
 :: 8.0 Screenshots Area CSS
 -------------------------- */
 
+.app_screenshots_slides_titles .single-shot > h5 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2213d2;
+}
+
+.app_screenshots_slides_titles {
+    padding: 0 6%;
+}
+
+.app_screenshots_slides_titles .single-shot {
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    -webkit-transform: scale(0.85) translateY(30px);
+    -ms-transform: scale(0.85) translateY(30px);
+    transform: scale(0.85) translateY(30px);
+}
+
+.app_screenshots_slides_titles .single-shot.slick-current {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: scale(1) translateY(0px);
+    -ms-transform: scale(1) translateY(0px);
+    transform: scale(1) translateY(0px);
+}
+
 .app_screenshots_slides {
     padding: 0 6%;
 }
@@ -820,36 +838,16 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
     -webkit-transform: scale(0.85);
     -ms-transform: scale(0.85);
-    transform: scale(0.85)
+    transform: scale(0.85);
+    box-shadow: 0px 0px 9px 0px;
 }
 
-.app_screenshots_slides .center .single-shot {
+.app_screenshots_slides .single-shot.slick-current {
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1)
-}
-
-.app-screenshots-area .owl-dot {
-    height: 11px;
-    width: 11px;
-    border: 2px solid #a49fba;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 6px;
-    margin-top: 50px;
-}
-
-.app-screenshots-area .owl-dot.active {
-    background-color: #01baef;
-    border: transparent;
-}
-
-.app-screenshots-area .owl-dots {
-    height: 100%;
-    width: 100%;
-    text-align: center;
 }
 
 /* --------------------------
@@ -876,7 +874,6 @@ p {
     color: #2213d2;
     font-size: 18px;
 }
-
 
 .single-price-plan .package-plan .ca-price h4 {
     color: #01baef;
@@ -929,6 +926,10 @@ p {
 .single-price-plan.active .plan-button > a,
 .single-price-plan:hover .plan-button > a {
     background-color: #0076ff;
+}
+
+.single-price-plan .package-plan .ca-price .d-flex {
+    margin-bottom: 15px;
 }
 
 .single-price-plan.active .package-plan .ca-price .d-flex > h4,
@@ -1014,7 +1015,6 @@ p {
     align-items: center;
     height: 129px;
 }
-
 
 .clients-feedback-area .slick-slide img {
     display: block;
@@ -1317,7 +1317,6 @@ p {
 .copyright-text > p {
     margin-bottom: 0;
 }
-
 
 .outer {
     position: relative;

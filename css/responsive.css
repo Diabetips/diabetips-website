@@ -29,6 +29,9 @@
     .app_screenshots_slides {
         padding: 0 4%;
     }
+    .app_screenshots_slides_titles {
+        padding: 0 4%;
+    }
     .header_area.sticky .menu_area #nav .nav-link {
         padding: 23px 7.5px;
     }
@@ -107,6 +110,9 @@
         font-size: 30px;
     }
     .app_screenshots_slides {
+        padding: 0;
+    }
+    .app_screenshots_slides_titles {
         padding: 0;
     }
     .clients-feedback-area .slick-slide.slick-current img {
