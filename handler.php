@@ -20,7 +20,7 @@ $validator->field('Message')->maxLength(6000);
 
 
 $pp->requireReCaptcha();
-$pp->getReCaptcha()->initSecretKey('6Ld2OYEUAAAAAOY4jBaDU2XuqRQIv05_W_fwgeK_');
+$pp->getReCaptcha()->initSecretKey('6LckQIEUAAAAAJqfWatgT7ftZAEKtr1N0zreNXxn');
 
 
 $pp->sendEmailTo('contact@diabetips.fr'); // ← Your email here

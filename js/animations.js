@@ -26,14 +26,12 @@ $(document).ready(function() {
     var movementStrength = 25;
     var height = movementStrength / $(window).height();
     var width = movementStrength / $(window).width();
-    console.log($('.target-mouse').css('background-size'));
     $(document).mousemove(function(e){
         var pageX = e.pageX - ($(window).width() / 2);
         var pageY = e.pageY - ($(window).height() / 2);
         var newvalueX = width * -pageX;
         var newvalueY = height * -pageY;
         $('.target-mouse').css("background-position", "calc("+newvalueX+"px + 50%)"+" calc("+newvalueY+"px + 50%)");
-        console.log(e.pageX, e.pageY);
     });
 });
 

@@ -236,27 +236,41 @@
         });
     });
 
-})(jQuery);
-
-
-$(function()
-{
+    var $form;
+    var $btn;
     function after_form_submitted(data)
     {
         if(data.result == 'success')
         {
-            $('form#reused_form').hide();
+            $('#reused_form').trigger("reset");
+            if (typeof grecaptcha !== "undefined") {
+                grecaptcha.reset();
+            }
             $('#success_message').show();
             $('#error_message').hide();
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                var label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
         }
         else
         {
-            $('#error_message').append('<ul></ul>');
+            /*$('#error_message').append('<ul></ul>');
 
             jQuery.each(data.errors,function(key,val)
             {
                 $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
+            });*/
+            if (typeof grecaptcha !== "undefined") {
+                grecaptcha.reset();
+            }
             $('#success_message').hide();
             $('#error_message').show();
 
@@ -264,7 +278,7 @@ $(function()
             $('button[type="button"]', $form).each(function()
             {
                 $btn = $(this);
-                label = $btn.prop('orig_label');
+                var label = $btn.prop('orig_label');
                 if(label)
                 {
                     $btn.prop('type','submit' );
@@ -300,4 +314,5 @@ $(function()
         });
 
     });
-});
+
+})(jQuery);
