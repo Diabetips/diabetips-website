@@ -25,6 +25,13 @@
         });
     }
 
+    $(function() {
+        $('.mouse_scroll').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('data-href')).offset().top}, 700, 'linear');
+        });
+    });
+
     // :: 2.0 Slick Active Code
     if ($.fn.slick) {
         $('.slider-for').slick({
