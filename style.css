@@ -1286,6 +1286,28 @@ p {
 
 .member-image img {
     border-radius: 30px 30px 30px 0;
+    height: 170px;
+    width: 100%;
+}
+
+.outer {
+    position: relative;
+    background-size: cover;
+}
+
+.outer:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc(2 / 3 * 100%);
+}
+
+.outer > .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .member-text > h4 {
@@ -1490,24 +1512,4 @@ p {
 
 .copyright-text > p {
     margin-bottom: 0;
-}
-
-.outer {
-    position: relative;
-    background-size: cover;
-}
-
-.outer:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: calc(2 / 3 * 100%);
-}
-
-.outer > .inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
