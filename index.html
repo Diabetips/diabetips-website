@@ -533,22 +533,34 @@
             </div>
             <div class="col-md-6">
                 <!-- Form Start-->
+                <script src='https://www.google.com/recaptcha/api.js'></script>
                 <div class="contact_from">
-                    <form action="#" method="post">
+                    <div id="success_message" style="display:none">
+                        <div class="alert alert-success" role="alert">
+                            Le message a bien été envoyé !<br/>
+                            Nous vous répondrons dans les plus brefs délais.
+                        </div>
+                    </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <div class="alert alert-danger" role="alert">
+                            Désolé, un problème a empêché l'envoi du formulaire.
+                        </div>
+                    </div>
+                    <form method="post" id="reused_form">
                         <!-- Message Input Area Start -->
                         <div class="contact_input_area">
                             <div class="row">
                                 <!-- Single Input Area Start -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="name" id="name" placeholder="Nom"
+                                        <input class="form-control" id="name" type="text" name="Name" placeholder="Nom"
                                                required>
                                     </div>
                                 </div>
                                 <!-- Single Input Area Start -->
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email"
+                                        <input id="email" type="email" name="Email" class="form-control"
                                                placeholder="E-mail" required>
                                     </div>
                                 </div>
@@ -557,6 +569,14 @@
                                     <div class="form-group">
                                         <textarea name="message" class="form-control" id="message" cols="30" rows="4"
                                                   placeholder="Votre Message *" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                                        <div class="g-recaptcha"
+                                             data-sitekey="6LckQIEUAAAAAKGb3y5boHUzqlJKarslK-kzryET">
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Single Input Area Start -->
@@ -593,7 +613,8 @@
     <!-- Foooter Text-->
     <div class="copyright-text">
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2017 Dt. Designed by <a href="https://diabe.tips" target="_blank" style="color: var(--color-primary)">Diabetips</a></p>
+        <p>Copyright ©2017 Dt. Designed by <a href="https://diabe.tips" target="_blank"
+                                              style="color: var(--color-primary)">Diabetips</a></p>
     </div>
 </footer>
 <!-- ***** Footer Area Start ***** -->
