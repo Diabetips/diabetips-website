@@ -32,6 +32,12 @@
         });
     });
 
+    $(function() {
+        $('.goto-pricing').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 700, 'linear');
+        });
+    });
     // :: 2.0 Slick Active Code
     if ($.fn.slick) {
         $('.slider-for').slick({
