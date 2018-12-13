@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
@@ -33,7 +33,7 @@
 </div>
 
 <!-- ***** Header Area Start ***** -->
-<header class="header_area animated">
+<header class="header_area animated fast-animated">
     <div class="container-fluid">
         <div class="row align-items-center nav-height">
             <!-- Menu Area Start -->
@@ -50,13 +50,24 @@
                         <div class="collapse navbar-collapse" id="ca-navbar">
                             <ul class="navbar-nav ml-auto" id="nav">
                                 <li class="nav-item active"><a class="nav-link" href="#home">Accueil</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#about">À Propos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">A propos</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#screenshot">Application</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#pricing">Formules</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#team">Équipe</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                             </ul>
+                            <div class="sing-up-button d-lg-none">
+                                <a href="#">Je suis diabétologue</a>
+                            </div>
                         </div>
                     </nav>
+                </div>
+            </div>
+            <!-- Signup btn -->
+            <div class="col-12 col-lg-2">
+                <div class="sing-up-button d-none d-lg-block">
+                    <a href="#">Je suis diabétologue</a>
                 </div>
             </div>
         </div>
@@ -67,77 +78,96 @@
 <!-- ***** Wellcome Area Start ***** -->
 <section class="wellcome_area clearfix" id="home">
     <div class="container h-100">
-        <div class="row h-100 align-items-center">
+        <div class="row h-100 align-items-center wellcome_infos">
             <div class="col-12 col-md">
                 <div class="wellcome-heading">
                     <h2>Diabetips</h2>
                     <h3>D</h3>
-                    <p>WELCOME HUMAN</p>
+                    <h4>Une application qui calcule vos taux d'insuline à votre place</h4>
                 </div>
                 <div class="get-start-area">
+                    <!-- Form Start -->
+                    <div class="get-started-button" style="text-align: left">
+                        <a class="goto-pricing" href="#pricing">Tester Diabetips</a>
+                    </div>
+                    <!-- Form End -->
+                </div>
+            </div>
+            <!-- Welcome thumb -->
+            <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
+                <img src="img/bg-img/welcome-img.png" alt="">
+            </div>
+            <div class="col-12">
+                <h4 class="mouse-scroll-title">En savoir plus</h4>
+                <div class="mouse_scroll" data-href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Welcome thumb -->
-    <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-        <img src="img/bg-img/welcome-img.png" alt="">
     </div>
 </section>
 <!-- ***** Wellcome Area End ***** -->
 
 <!-- ***** Special Area Start ***** -->
-<section class="special-area section_padding_50" id="about">
+<section class="special-area bg-white section_padding_100" id="about">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <!-- Section Heading Area -->
                 <div class="section-heading text-center">
-                    <h2>Pourquoi nous choisir ?</h2>
+                    <h2>Diabetips simplifie votre diabète</h2>
                     <div class="line-shape"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <!-- Single Special Area -->
-            <div class="col-12 col-md-4">
-                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="single-icon">
-                        <i class="ti-user" aria-hidden="true"></i>
+            <div class="row">
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="single-icon">
+                            <i class="ti-user" aria-hidden="true"></i>
+                        </div>
+                        <h4>Diabetips calcule le bon taux d'insuline à votre place</h4>
+                        <p>Plus besoin de calculs complexes et stressants</p>
                     </div>
-                    <h4>Confort</h4>
-                    <p>Une interface simple et rapide a prendre en main</p>
                 </div>
-            </div>
-            <!-- Single Special Area -->
-            <div class="col-12 col-md-4">
-                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="single-icon">
-                        <i class="ti-shield" aria-hidden="true"></i>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="single-icon">
+                            <i class="ti-panel" aria-hidden="true"></i>
+                        </div>
+                        <h4>Diabetips évolue avec vous</h4>
+                        <p>Grâce à notre intelligence artificielle, notre application s'adapte à vos habitudes.</p>
                     </div>
-                    <h4>Securité</h4>
-                    <p>Plus de sécurité grâce à une application intelligente</p>
                 </div>
-            </div>
-            <!-- Single Special Area -->
-            <div class="col-12 col-md-4">
-                <div class="single-special text-center wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="single-icon">
-                        <i class="ti-panel" aria-hidden="true"></i>
+                <!-- Single Special Area -->
+                <div class="col-12 col-md-4">
+                    <div class="single-special text-center wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-icon">
+                            <i class="ti-shield" aria-hidden="true"></i>
+                        </div>
+                        <h4>Diabetips, une seule app pour tous vos besoins</h4>
+                        <p>Plus de sécurité grâce à une application intelligente et un suivi direct</p>
                     </div>
-                    <h4>IA évolutive</h4>
-                    <p>Une IA pour vous accompagner dans la gestion de votre diabète</p>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- Special Description Area -->
-    <div class="special_description_area" style="padding-top: 50px">
+    <div class="special_description_area mt-150">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="animatable special_description_img bounceInLeft">
+                    <div class="special_description_img">
                         <img src="img/bg-img/special.png" alt="">
                     </div>
                 </div>
@@ -146,25 +176,19 @@
                         <h2>Téléchargez l'App Aujourd'hui !</h2>
                         <p>Et vous aussi, simplifiez votre diabète</p>
                         <div class="app-download-area">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
-                                        <!-- Google Store Btn -->
-                                        <a href="#">
-                                            <i class="fa fa-android"></i>
-                                            <p class="mb-0"><span>Téléchargez sur</span> Google Play</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
-                                        <!-- Apple Store Btn -->
-                                        <a href="#">
-                                            <i class="fa fa-apple"></i>
-                                            <p class="mb-0"><span>Téléchargez sur</span> Apple Store</p>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="app-download-btn wow fadeInUp" data-wow-delay="0.2s">
+                                <!-- Google Store Btn -->
+                                <a href="#">
+                                    <i class="fa fa-android"></i>
+                                    <p class="mb-0"><span>Disponible sur le</span> Play Store</p>
+                                </a>
+                            </div>
+                            <div class="app-download-btn wow fadeInDown" data-wow-delay="0.4s">
+                                <!-- Apple Store Btn -->
+                                <a href="#">
+                                    <i class="fa fa-apple"></i>
+                                    <p class="mb-0"><span>Disponible sur l'</span> Apple Store</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +200,7 @@
 <!-- ***** Special Area End ***** -->
 
 <!-- ***** Awesome Features Start ***** -->
-<section class="awesome-feature-area section_padding_0_50 clearfix" id="features">
+<section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -186,77 +210,79 @@
                     <div class="line-shape"></div>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-user" aria-hidden="true"></i>
-                    <h5>Awesome Experience</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+            <div class="row">
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-user" aria-hidden="true"></i>
+                        <h5>Une application personnelle</h5>
+                        <p>Grâce à notre intelligence artificielle, l'application s'adapte à vos habitudes alimentaires,
+                            votre activité sportive et votre physionomie.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-pulse" aria-hidden="true"></i>
-                    <h5>Fast and Simple</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-pulse" aria-hidden="true"></i>
+                        <h5>Une application sécurisée</h5>
+                        <p>La sécurité est notre priorité que ce soit pour nos calculs de taux de sucre et
+                            d'insuline et pour le stockage de vos données.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-dashboard" aria-hidden="true"></i>
-                    <h5>Clean Code</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-dashboard" aria-hidden="true"></i>
+                        <h5>Une application qui vous suit</h5>
+                        <p>Vous pouvez à tout moment nous faire part de vos remarques
+                            et de vos idées pour nous améliorer depuis le chat dans l'application.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-palette" aria-hidden="true"></i>
-                    <h5>Perfect Design</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-palette" aria-hidden="true"></i>
+                        <h5>Une application facile à utiliser</h5>
+                        <p>L'ergonomie et la facilité d'utilisation de l'application font parties de nos priorités
+                            pour toujours avoir une expérience intuitive sans frustration.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-crown" aria-hidden="true"></i>
-                    <h5>Best Industry Leader</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-crown" aria-hidden="true"></i>
+                        <h5>Une application communautaire</h5>
+                        <p>Vous créez et partagez vos recettes directement depuis l'application pour en faire profiter
+                            toute notre communauté.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Single Feature Start -->
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="single-feature">
-                    <i class="ti-headphone" aria-hidden="true"></i>
-                    <h5>24/7 Online Support</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id
-                        est laborum.</p>
+                <!-- Single Feature Start -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-feature">
+                        <i class="ti-headphone" aria-hidden="true"></i>
+                        <h5>Une application en contact*</h5>
+                        <p>
+                            Vous avez une question à propos de votre diabète, grâce à notre chat intégré vous pouvez
+                            contacter votre diabétologue.
+                            <br/>*seulement avec les diabétologues participants
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 <!-- ***** Awesome Features End ***** -->
 
-<!-- ***** App Screenshots Area Start *****
+<!-- ***** App Screenshots Area Start ***** -->
 <section class="app-screenshots-area bg-white section_padding_0_100 clearfix" id="screenshot">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                Heading Text
+                <!-- Heading Text  -->
                 <div class="section-heading">
-                    <h2>App Screenshots</h2>
+                    <h2>Application</h2>
                     <div class="line-shape"></div>
                 </div>
             </div>
@@ -265,35 +291,136 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                App Screenshots Slides
-                <div class="app_screenshots_slides owl-carousel">
+                <div class="app_screenshots_slides_titles">
                     <div class="single-shot">
-                        <img src="img/scr-img/app-1.jpg" alt="">
+                        <h5>Notez vos injections d'insuline</h5>
                     </div>
                     <div class="single-shot">
-                        <img src="img/scr-img/app-2.jpg" alt="">
+                        <h5>Revoyez votre historique de calculs</h5>
                     </div>
                     <div class="single-shot">
-                        <img src="img/scr-img/app-3.jpg" alt="">
+                        <h5>Une large sélection de plats disponible</h5>
                     </div>
                     <div class="single-shot">
-                        <img src="img/scr-img/app-4.jpg" alt="">
+                        <h5>Ajoutez des repas aisément</h5>
                     </div>
                     <div class="single-shot">
-                        <img src="img/scr-img/app-5.jpg" alt="">
+                        <h5>Personnalisez vos quantités et vos ingrédients</h5>
                     </div>
                     <div class="single-shot">
-                        <img src="img/scr-img/app-3.jpg" alt="">
+                        <h5>L'application s'adapte à vous et à vos besoins</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- App Screenshots Slides  -->
+                <div class="app_screenshots_slides">
+                    <div class="single-shot">
+                        <video width="100%" video loop muted="">
+                            <source src="img/scr-img/video_ajout_piqure.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="single-shot">
+                        <video width="100%" video loop muted="">
+                            <source src="img/scr-img/video_courbe.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="single-shot">
+                        <img data-lazy="img/scr-img/page_recherche_plat.png" alt="">
+                    </div>
+                    <div class="single-shot">
+                        <video width="100%" video loop muted="">
+                            <source src="img/scr-img/video_annuler_repas.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="single-shot">
+                        <video width="100%" video loop muted="">
+                            <source src="img/scr-img/video_ajout_repas.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="single-shot">
+                        <img data-lazy="img/scr-img/page_recap_repas.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-***** App Screenshots Area End *****====== -->
+<!-- ***** App Screenshots Area End *****====== -->
+
+<!-- ***** Pricing Plane Area Start *****==== -->
+<section class="pricing-plane-area section_padding_100_70 clearfix" id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Heading Text  -->
+                <div class="section-heading">
+                    <h2>Devenez beta testeur</h2>
+                    <div class="line-shape"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row no-gutters" style="justify-content: center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Package Price  -->
+                <div class="single-price-plan active text-center">
+                    <!-- Package Text  -->
+                    <div class="package-plan">
+                        <div class="ca-price justify-content-center">
+                            <div class="d-flex justify-content-center">
+                                <span>€</span>
+                                <h4>0</h4>
+                            </div>
+                            <div class="col-12">
+                                <p style="padding-bottom: 15px;">Application avec les avantages premium gratuite à
+                                    vie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="package-description">
+                        <p>Accès à une grande variété de repas.</p>
+                        <p>Fonctionne avec le patch Abbot Freestyle libre.</p>
+                        <p>Calcul du taux de sucre contenu dans le repas.</p>
+                        <p>Ouverture d'un accès direct pour votre diabétologue.</p>
+                        <p>Suivi de votre diabète.</p>
+                        <p>Intelligence artificielle active.<br/>(mode développement)</p>
+                        <p>Suivi de votre activité sportive.</p>
+                        <p>Calcul de votre taux de glycémie.</p>
+                    </div>
+                    <!-- Plan Button  -->
+                    <div class="plan-button">
+                        <a href="#contact">Devenir beta testeur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Pricing Plane Area End ***** -->
+
+<!-- ***** CTA Area Start ***** -->
+<section class="our-monthly-membership section_padding_50 clearfix">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <div class="membership-description">
+                    <h2>Devenez un beta testeur</h2>
+                    <p>Participez à notre développement.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="get-started-button wow bounceInDown" data-wow-delay="0.5s">
+                    <a href="#contact">Je participe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** CTA Area End ***** -->
 
 <!-- ***** Our Team Area Start ***** -->
-<section class="our-Team-area section_padding_50 clearfix" id="team">
+<section class="our-Team-area bg-white section_padding_100_50 clearfix" id="team">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -381,19 +508,19 @@
     </div>
 </section>
 <!-- ***** Our Team Area End ***** -->
-
 <!-- ***** Contact Us Area Start ***** -->
-<section class="footer-contact-area section_padding_50 clearfix" id="contact">
+<section class="footer-contact-area section_padding_100 clearfix" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <!-- Heading Text  -->
                 <div class="section-heading">
-                    <h2>Contactez nous !</h2>
+                    <h2 style="text-align: left;">Contactez nous !</h2>
                     <div class="line-shape"></div>
                 </div>
                 <div class="footer-text">
-                    <p>Faites nous part de votre expérience et de vos idées</p>
+                    <p>Faites nous part de votre expérience et de vos idées.
+                        Devenez un beta testeur de notre application</p>
                 </div>
                 <div class="address-text">
                     <p><span>Addresse:</span> 80 rue Saint-Georges, 54000 Nancy</p>
@@ -414,32 +541,32 @@
                             <div class="row">
                                 <!-- Single Input Area Start -->
                                 <div class="col-md-12">
-                                    <div class="form-group animatable bounceInRight">
+                                    <div class="form-group">
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Nom"
                                                required>
                                     </div>
                                 </div>
                                 <!-- Single Input Area Start -->
                                 <div class="col-md-12">
-                                    <div class="form-group animatable bounceInRight">
+                                    <div class="form-group">
                                         <input type="email" class="form-control" name="email" id="email"
                                                placeholder="E-mail" required>
                                     </div>
                                 </div>
                                 <!-- Single Input Area Start -->
                                 <div class="col-12">
-                                    <div class="form-group animatable bounceInRight">
+                                    <div class="form-group">
                                         <textarea name="message" class="form-control" id="message" cols="30" rows="4"
                                                   placeholder="Votre Message *" required></textarea>
                                     </div>
                                 </div>
                                 <!-- Single Input Area Start -->
-                                <div class="col-12  animatable bounceInRight">
+                                <div class="col-12">
                                     <button type="submit" class="btn submit-btn">Envoyer</button>
                                 </div>
                             </div>
+                            <!-- Message Input Area End -->
                         </div>
-                        <!-- Message Input Area End -->
                     </form>
                 </div>
             </div>
@@ -457,7 +584,7 @@
     <div class="footer-menu">
         <nav>
             <ul>
-                <li><a href="#">À Propos</a></li>
+                <li><a href="#">à Propos</a></li>
                 <li><a href="#">Termes &amp; Conditions</a></li>
                 <li><a href="#">Politique de Confidentialité</a></li>
                 <li><a href="#">Contact</a></li>
@@ -467,7 +594,8 @@
     <!-- Foooter Text-->
     <div class="copyright-text">
         <!-- ***** Removing this text is now allowed! This template is licensed under CC BY 3.0 ***** -->
-        <p>Copyright ©2017 Dt. Designed by <a href="https://diabe.tips" target="_blank">Diabetips</a></p>
+        <p>Copyright ©2017 Dt. Designed by <a href="https://diabe.tips" target="_blank"
+                                              style="color: var(--color-primary-darker)">Diabetips</a></p>
     </div>
 </footer>
 <!-- ***** Footer Area Start ***** -->
@@ -489,5 +617,4 @@
 <!-- Animations -->
 <script src="js/animations.js"></script>
 </body>
-
 </html>
