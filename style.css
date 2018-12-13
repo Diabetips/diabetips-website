@@ -214,7 +214,7 @@ ol {
     font-size: 24px;
     right: 30px;
     width: 50px;
-    background-color: var(--color-primary-lighter);
+    background-color: var(--color-accent);
     color: var(--color-main-bg);
     text-align: center;
     height: 50px;
@@ -262,7 +262,7 @@ p {
 .line-shape {
     width: 80px;
     height: 2px;
-    background-color: var(--color-primary-lighter);
+    background-color: var(--color-accent);
     margin-top: 15px;
 }
 
@@ -724,18 +724,13 @@ p {
     color: var(--color-accent);
 }
 
-.single-special > h4 {
-    font-size: 22px;
-    color: var(--color-primary);
-}
-
 .single-icon {
     margin-bottom: 25px;
 }
 
 .single-special > h4 {
     font-size: 22px;
-    color: var(--color-primary);
+    color: var(--color-primary-lighter);
     margin-bottom: 15px;
 }
 
@@ -860,7 +855,7 @@ p {
 
 .single-feature > h5 {
     font-size: 22px;
-    color: var(--color-primary);
+    color: var(--color-primary-lighter);
 }
 
 .single-feature > p {
@@ -928,7 +923,7 @@ p {
     position: relative;
     z-index: auto;
     background: var(--color-primary);
-    background: -webkit-linear-gradient(to left, var(--color-primary), var(--color-primary));
+    background: -webkit-linear-gradient(to left, var(--color-primary), var(--color-primary-lighter));
     background: -webkit-linear-gradient(right, var(--color-primary), var(--color-primary));
     background: -webkit-gradient(linear, right top, left top, from(var(--color-primary)), to(var(--color-primary)));
     background: -o-linear-gradient(right, var(--color-primary), var(--color-primary));
@@ -980,7 +975,7 @@ p {
     font-size: 22px;
     text-align: center;
     margin-bottom: 25px;
-    color: var(--color-primary);
+    color: var(--color-primary-lighter);
 }
 
 .app_screenshots_slides_titles {
@@ -1143,7 +1138,7 @@ p {
 }
 
 .clients-feedback-area .client-name > p {
-    color: #b5aec4;
+    color: #424242;
 }
 
 .clients-feedback-area .slick-dots {
@@ -1212,7 +1207,7 @@ p {
     height: 100%;
     text-align: center;
     font-size: 24px;
-    color: #b5aec4;
+    color: #424242;
     display: block;
     line-height: 550%;
     left: 0;
@@ -1312,11 +1307,11 @@ p {
 
 .member-text > h4 {
     font-size: 22px;
-    color: var(--color-primary);
+    color: var(--color-primary-lighter);
 }
 
 .member-text > p {
-    color: #b5aec4;
+    color: #424242;
     margin-bottom: 0;
 }
 
@@ -1389,7 +1384,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-    color: var(--color-primary);
+    color: var(--color-primary-lighter);
 }
 
 .footer-contact-area .line-shape {
