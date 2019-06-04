@@ -41,7 +41,7 @@
                 <div class="menu_area">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <!-- Logo -->
-                        <a class="navbar-brand" href="#"><img src="img/core-img/logo_white.png" alt=""
+                        <a class="navbar-brand" href="#"><img src="img/loading.gif" data-src="img/core-img/logo_white.png" alt="" class="lazy"
                                                               style="height: 50px"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ca-navbar"
                                 aria-controls="ca-navbar" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -74,7 +74,7 @@
 </header>
 <!-- ***** Header Area End ***** -->
 
-<!-- ***** Wellcome Area Start ***** -->
+<!-- ***** Welcome Area Start ***** -->
 <section class="wellcome_area clearfix" id="home">
     <div class="container h-100">
         <div class="row h-100 align-items-center wellcome_infos">
@@ -94,7 +94,7 @@
             </div>
             <!-- Welcome thumb -->
             <div class="welcome-thumb wow fadeInDown" data-wow-delay="0.5s">
-                <img src="img/bg-img/welcome-img.png" alt="">
+                <img src="img/loading.gif" class="lazy" data-src="img/bg-img/welcome-img.png" alt="">
             </div>
             <div class="col-12">
                 <h4 class="mouse-scroll-title">En savoir plus</h4>
@@ -112,7 +112,7 @@
         </div>
     </div>
 </section>
-<!-- ***** Wellcome Area End ***** -->
+<!-- ***** Welcome Area End ***** -->
 
 <!-- ***** Special Area Start ***** -->
 <section class="special-area bg-white section_padding_100" id="about">
@@ -167,7 +167,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="special_description_img">
-                        <img src="img/bg-img/special.png" alt="">
+                        <img src="img/loading.gif" class="lazy" data-src="img/bg-img/special.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-xl-5 ml-xl-auto">
@@ -598,7 +598,7 @@
 <footer class="footer-social-icon text-center section_padding_70 clearfix">
     <!-- footer logo -->
     <div class="footer-text">
-        <h2><img src="img/core-img/logo_blue.png" alt="" style="height: 6vh"></h2>
+        <h2><img src="img/loading.gif" class="lazy" data-src="img/core-img/logo_blue.png" alt="" style="height: 6vh"></h2>
     </div>
     <div class="footer-menu">
         <nav>
@@ -635,5 +635,35 @@
 <script src="js/active.js"></script>
 <!-- Animations -->
 <script src="js/animations.js"></script>
+<!-- Lazy Loading -->
+<script>
+registerListener('DOMContentLoaded', lazyLoad);
+
+function lazyLoad(){
+    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+    if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+            lazyImageObserver.unobserve(lazyImage);
+        }
+        });
+    });
+    lazyImages.forEach(function(lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+    });
+    } else {
+    // Possibly fall back to a more compatible method here
+    }
+}
+
+function registerListener(event, func) {
+    document.addEventListener(event, func)
+}
+</script>
 </body>
 </html>
