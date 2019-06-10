@@ -41,7 +41,7 @@ return [
             'host'      => 'diabe.tips',
             'username'  => 'sc1julianjl',
             'password'  => '',
-            'key'       => '/Users/julian-ladjani/.ssh/id_rsa',
+            'key'       => '/var/lib/jenkins/.ssh/id_rsa',
             'keyphrase' => '',
             'agent'     => '',
             'db_role'   => true,
