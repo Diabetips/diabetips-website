@@ -10,7 +10,7 @@ return [
 
     // The SSH/HTTPS address to your repository
     // Example: https://github.com/vendor/website.git
-    'repository' => 'gitlab.com:diabeteam/showcase-website.git',
+    'repository' => 'git@github.com:Diabetips/diabetips-website.git',
 
     // The repository credentials : you can leave those empty
     // if you're using SSH or if your repository is public
