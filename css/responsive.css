@@ -62,7 +62,7 @@
     #ca-navbar {
         padding: 30px;
         border-radius: 3px;
-        background-color: #2d3ae4;
+        background-color: var(--color-primary);
         text-align: left;
     }
     .sing-up-button {
@@ -83,7 +83,8 @@
         margin-top: 50px;
     }
     .special_description_content > h2 {
-        font-size: 30px;
+        font-size: 20px;.special_description_content > h2
+        letter-spacing: 1px;
     }
     .video-area {
         height: 350px;
@@ -127,9 +128,18 @@
         width: 90px !important;
         height: 90px !important;
     }
+    .app-download-btn:first-child {
+        margin-right: 0;
+    }
+    .app-download-area {
+        display: block;
+    }
+    .app-download-btn {
+        margin-bottom: 20px;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 100px) and (max-width: 767px) {
     .header_area {
         padding: 0;
     }
@@ -146,8 +156,9 @@
     #ca-navbar {
         padding: 20px;
         border-radius: 3px;
-        background-color: #2d3ae4;
+        background-color: var(--color-primary-lighter);
         text-align: left;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
     .sing-up-button {
         margin-top: 30px;
@@ -185,7 +196,8 @@
         margin-top: 50px;
     }
     .special_description_content > h2 {
-        font-size: 30px;
+        font-size: 20px;
+        letter-spacing: 1px;
     }
     .app-download-btn:first-child {
         margin-right: 0;
@@ -242,6 +254,15 @@
     }
     .cool_facts_area .col-12:last-of-type .single-cool-fact {
         margin-bottom: 0;
+    }
+
+    .left-background {
+        width: 90vw;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100vw;
     }
 }
 
