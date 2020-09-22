@@ -2742,3 +2742,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: rollOut;
   animation-name: rollOut;
 }
+
+.moveUpAndDown {
+  animation: MoveUpDown 8s linear infinite;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 40px;
+  }
+}
