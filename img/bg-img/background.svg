@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1312" height="1028" viewBox="0 0 1312 1028">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_442" data-name="Rectangle 442" width="1312" height="1028" transform="translate(3927 -545)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.037" y1="1.316" x2="0.989" y2="1.698" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#26ccee"/>
+      <stop offset="1" stop-color="#3cb0f3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.038" y1="0.858" x2="0.477" y2="0.638" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#20b9e1"/>
+      <stop offset="1" stop-color="#28c7ef"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.399" y1="0.837" x2="0.992" y2="0.039" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1faee3"/>
+      <stop offset="1" stop-color="#2dd3f4"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_444" data-name="Rectangle 444" width="1312" height="1028" transform="translate(3932 -570)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Background" transform="translate(-3932 570)">
+    <g id="Background-2" data-name="Background" transform="translate(5 -25)" clip-path="url(#clip-path)">
+      <g id="Background-3" data-name="Background">
+        <path id="Tracé_2386" data-name="Tracé 2386" d="M-2.592,1081.933s528.641,341.647,1323.028,256.6c-4.106,5.97-.436-702.689-.436-702.689H2.053Z" transform="translate(3924 -888.698)" fill="url(#linear-gradient)"/>
+        <path id="Tracé_2385" data-name="Tracé 2385" d="M-1.722,688.784C262.329,802.877,922.885,966.023,1319.066,773.2c2.1,4.762,0-776.259,0-776.259H0S-1.978,689.419-1.722,688.784Z" transform="translate(3924 -546)" fill="url(#linear-gradient-2)"/>
+        <path id="Tracé_2383" data-name="Tracé 2383" d="M-.5,149.744c74.728,125.9,752.257,892.105,1324.118,666.609-2.541,0-.684-815.207-.684-815.207L0,.461S-.115,150.258-.5,149.744Z" transform="translate(3922 -550)" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+    <g id="Shapes_right" data-name="Shapes right" clip-path="url(#clip-path-2)">
+      <circle id="Ellipse_181" data-name="Ellipse 181" cx="62" cy="62" r="62" transform="translate(4823 130)" fill="#fff" opacity="0.11"/>
+      <g id="Ellipse_182" data-name="Ellipse 182" transform="translate(4855 69)" fill="none" stroke="#fff" stroke-width="8" opacity="0.11">
+        <circle cx="68" cy="68" r="68" stroke="none"/>
+        <circle cx="68" cy="68" r="64" fill="none"/>
+      </g>
+      <g id="Ellipse_183" data-name="Ellipse 183" transform="translate(5125 -67)" fill="none" stroke="#fff" stroke-width="8" opacity="0.11">
+        <circle cx="42" cy="42" r="42" stroke="none"/>
+        <circle cx="42" cy="42" r="38" fill="none"/>
+      </g>
+      <g id="Ellipse_184" data-name="Ellipse 184" transform="translate(5097 -149)" fill="none" stroke="#fff" stroke-width="8" opacity="0.11">
+        <circle cx="23.5" cy="23.5" r="23.5" stroke="none"/>
+        <circle cx="23.5" cy="23.5" r="19.5" fill="none"/>
+      </g>
+      <circle id="Ellipse_185" data-name="Ellipse 185" cx="111" cy="111" r="111" transform="translate(5133 17)" fill="#fff" opacity="0.11"/>
+      <circle id="Ellipse_186" data-name="Ellipse 186" cx="56" cy="56" r="56" transform="translate(5190 -269)" fill="#fff" opacity="0.11"/>
+      <path id="Tracé_2388" data-name="Tracé 2388" d="M2582.958,64.468c40.942,0,57.277,76.742,79.812,76.742s40.929-76.742,75.719-76.742,54.231,76.742,80.835,76.742,45.924-76.742,84.927-76.742,49.115,76.742,84.928,76.742,47.069-76.742,84.928-76.742,43.759,76.742,78.789,76.742,45.005-76.742,77.765-76.742" transform="translate(2395.085 -634.725)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="20" opacity="0.22"/>
+    </g>
+    <g id="Shapes_left" data-name="Shapes left" clip-path="url(#clip-path-2)">
+      <ellipse id="Ellipse_187" data-name="Ellipse 187" cx="91.5" cy="91" rx="91.5" ry="91" transform="translate(3868 -322)" fill="#fff" opacity="0.11"/>
+      <g id="Ellipse_188" data-name="Ellipse 188" transform="translate(3916 -411)" fill="none" stroke="#fff" stroke-width="8" opacity="0.11">
+        <circle cx="100" cy="100" r="100" stroke="none"/>
+        <circle cx="100" cy="100" r="96" fill="none"/>
+      </g>
+      <path id="Tracé_2387" data-name="Tracé 2387" d="M2582.958,64.468c18.829,0,26.341,35.293,36.7,35.293s18.823-35.293,34.822-35.293,24.94,35.293,37.175,35.293,21.12-35.293,39.057-35.293,22.587,35.293,39.057,35.293,21.646-35.293,39.057-35.293,20.124,35.293,36.234,35.293,20.7-35.293,35.763-35.293" transform="translate(1384 -13)" fill="none" stroke="#82eeff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" opacity="0.22"/>
+      <g id="Ellipse_189" data-name="Ellipse 189" transform="translate(4337 201)" fill="none" stroke="#fff" stroke-width="8" opacity="0.11">
+        <circle cx="26.5" cy="26.5" r="26.5" stroke="none"/>
+        <circle cx="26.5" cy="26.5" r="22.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
